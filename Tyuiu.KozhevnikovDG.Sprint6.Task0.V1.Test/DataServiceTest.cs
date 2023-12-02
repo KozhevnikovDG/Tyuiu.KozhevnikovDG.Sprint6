@@ -1,0 +1,21 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+
+using Tyuiu.KozhevnikovDG.Sprint6.Task0.V1.Lib;
+
+namespace Tyuiu.KozhevnikovDG.Sprint6.Task0.V1.Test
+{
+    [TestClass]
+    public class DataServiceTest
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            DataService ds = new DataService();
+            double res = ds.Calculate(3);
+            double wait = 0.103;
+            Assert.AreEqual(wait, res);
+
+        }
+    }
+}
